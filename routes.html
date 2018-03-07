@@ -6,72 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>RESTful Routes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
 </head>
 
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>NAME</th>
-                <th>URL</th>
-                <th>VERB</th>
-                <th>DESCRIPTION</th>
-                <th>METHOD</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Index</td>
-                <td>/blogs</td>
-                <td>GET</td>
-                <td>Display a list of all blogs</td>
-                <td>Blog.find()</td>
-            </tr>
-            <tr>
-                <td>New</td>
-                <td>/blogs/new</td>
-                <td>GET</td>
-                <td>Displays form to make a new blog</td>
-                <td>N/A</td>
-            </tr>
-            <tr>
-                <td>Create</td>
-                <td>/blogs</td>
-                <td>POST</td>
-                <td>Add new blog to db and redirectes to another page</td>
-                <td>Blog.create()</td>
-            </tr>
-            <tr>
-                <td>Show</td>
-                <td>/blogs/:id</td>
-                <td>GET</td>
-                <td>Show the information of a particular blog</td>
-                <td>Blog.findById()</td>
-            </tr>
-            <tr>
-                <td>Edit</td>
-                <td>/blogs/:id/edit</td>
-                <td>GET</td>
-                <td>Show edit form for a particular blog</td>
-                <td>Blog.findById()</td>
-            </tr>
-            <tr>
-                <td>Update</td>
-                <td>/blogs/:id</td>
-                <td>PUT</td>
-                <td>Updates a particular blog and redirects to another page</td>
-                <td>Blog.findByIdAndUpdate()</td>
-            </tr>
-            <tr>
-                <td>Delete</td>
-                <td>/blogs/:id</td>
-                <td>DELETE</td>
-                <td>Deletes a particular blog and redirects to another page</td>
-                <td>Blog.findByIdAndRemove()</td>
-            </tr>
-        </tbody>
-    </table>
+<body style="padding-top: 80px">
+    <div class="ui main text container">
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>URL</th>
+                    <th>VERB</th>
+                    <th>DESCRIPTION</th>
+                    <th>METHOD</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Index</td>
+                    <td>/blogs</td>
+                    <td>GET</td>
+                    <td>Display a list of all blogs</td>
+                    <td>Blog.find()</td>
+                </tr>
+                <tr class="positive">
+                    <td>New</td>
+                    <td>/blogs/new</td>
+                    <td>GET</td>
+                    <td>Displays form to make a new blog</td>
+                    <td>N/A</td>
+                </tr>
+                <tr class="positive">
+                    <td>Create</td>
+                    <td>/blogs</td>
+                    <td>POST</td>
+                    <td>Add new blog to db and redirectes to another page</td>
+                    <td>Blog.create()</td>
+                </tr>
+                <tr>
+                    <td>Show</td>
+                    <td>/blogs/:id</td>
+                    <td>GET</td>
+                    <td>Show the information of a particular blog</td>
+                    <td>Blog.findById()</td>
+                </tr>
+                <tr class="warning">
+                    <td>Edit</td>
+                    <td>/blogs/:id/edit</td>
+                    <td>GET</td>
+                    <td>Show edit form for a particular blog</td>
+                    <td>Blog.findById()</td>
+                </tr>
+                <tr class="warning">
+                    <td>Update</td>
+                    <td>/blogs/:id</td>
+                    <td>PUT</td>
+                    <td>Updates a particular blog and redirects to another page</td>
+                    <td>Blog.findByIdAndUpdate()</td>
+                </tr>
+                <tr class="error">
+                    <td>Delete</td>
+                    <td>/blogs/:id</td>
+                    <td>DELETE</td>
+                    <td>Deletes a particular blog and redirects to another page</td>
+                    <td>Blog.findByIdAndRemove()</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
